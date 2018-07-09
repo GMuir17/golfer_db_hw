@@ -1,6 +1,8 @@
 import db.DBGolfer;
 import models.Golfer;
 
+import java.util.List;
+
 public class Runner {
 
     public static void main(String[] args) {
@@ -13,6 +15,8 @@ public class Runner {
 
         Golfer golfer3 = new Golfer("Ewan", "Scott", 87);
         DBGolfer.save(golfer3);
+
+        List<Golfer> golfers = DBGolfer.getAll();
 
     }
 
