@@ -16,8 +16,9 @@ public class Runner {
         Golfer golfer3 = new Golfer("Ewan", "Scott", 87);
         DBGolfer.save(golfer3);
 
-        List<Golfer> golfers = DBGolfer.getAll();
+//        List<Golfer> golfers = DBGolfer.getAll();
 
+        Golfer golfer = DBGolfer.findByID(golfer2.getId());
     }
 
 }
