@@ -18,7 +18,9 @@ public class Runner {
 
 //        List<Golfer> golfers = DBGolfer.getAll();
 
-        Golfer golfer = DBGolfer.findByID(golfer2.getId());
+//        Golfer golfer = DBGolfer.findByID(golfer2.getId());
+
+        Golfer golferTee = DBGolfer.findByFirstName(golfer2.getFirstName());
     }
 
 }
